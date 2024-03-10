@@ -49,6 +49,7 @@ class Server {
     //Configura las rutas
     routes() {
         this.app.use("/", authRoutes);
+        this.app.use('/usuario', usuarioRoutes)
     }
 }
 
