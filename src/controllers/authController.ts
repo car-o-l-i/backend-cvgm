@@ -22,7 +22,7 @@ class AuthController {
       ) {
         return res
           .status(400)
-          .json({ message: "Los campos son requeridos", code: 1 });
+          .json({ message: "Todos los campos son requeridos", code: 1 });
       }
 
       const lstUsers = await model.getuserByEmail(email);
@@ -42,7 +42,7 @@ class AuthController {
           console.log(lstUsers[0].username,lstUsers[0].password);
           return res.json({message: "Autenticacion correcta",token,code:0})
         }else{
-          return res.json({message:"Passwor Incorrecto", code:1})
+          return res.json({message:"contraseña Incorrecto", code:1})
         }
       })
 
