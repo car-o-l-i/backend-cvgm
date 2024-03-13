@@ -1,7 +1,6 @@
 import { Router } from "express";
 import { usuarioController } from "../controllers/usuarioController";
 
-
 class UsuarioRoutes {
 
 
