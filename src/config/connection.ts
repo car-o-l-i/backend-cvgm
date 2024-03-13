@@ -8,4 +8,9 @@ const pool = mysql.createPool({
     password: 'root',
     database: 'apliweb'
 });
-export default pool;
+export default {
+    keys: {
+        secret:')(/&%$webintegral$#&/%'
+    },
+    database: pool
+};
