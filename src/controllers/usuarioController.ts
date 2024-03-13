@@ -38,7 +38,7 @@ class UsuarioController {
       }
 
       await model.add(user);
-      return res.json({ message: "Agregar Usuario", code: 0 });
+      return res.json({ message: "Se agrego Usuario", code: 0 });
 
     } catch (error: any) {
       return res.status(500).json({ message: `${error.message}` });

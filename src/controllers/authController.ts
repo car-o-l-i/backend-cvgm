@@ -31,7 +31,7 @@ class AuthController {
         if(value){
           return res.json({message: "Autenticacion correcta",})
         }else{
-          return res.json({message:"Passwor Incorrecto", code:1})
+          return res.json({message:"Contraseña Incorrecta", code:1})
         }
       })
 
